@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  font-size: 24px;
+}
+
+.Content {
+  height: calc(100vh - 96px);
+  padding: 24px;
+
+  overflow: auto;
+}
+
+.Content p {
+  padding-bottom: 24px;
+}
+
+.BackDrop {
+  position: absolute;
+  top: calc(100% - 92px);
+
+  width: 100%;
+  height: 200vh;
+
+  padding: 12px 16px;
+
+  border-radius: 16px 16px 0 0;
+  background-color: #004d40;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.PullIndicator {
+  width: 64px;
+  height: 4px;
+
+  border-radius: 4px;
+
+  background-color: #fff;
+  margin: auto;
+}
+
+.Icons {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+
+  padding-top: 12px;
+}
+
+.Icon {
+  width: 56px;
+  height: 56px;
+
+  margin: auto;
+
+  border-radius: 100%;
+
+  background-color: #fff;
+}
